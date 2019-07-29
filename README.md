@@ -20,8 +20,8 @@ This is an online news platform that provides a list of global news sources and 
 
 ## Setup instructions.
 
-* from my github account [Uomar7]()
-* clone this app repo on <https://github.com/Uomar7/news_highlights.git>
+* from my github account [mi-ano]()
+* clone this app repo on <https://github.com/mi-ano/News>
 * Install flask `pip intall flask` on your project folder.
 * can make adjustments and run the app by running `./start.sh` command on your terminal.
 
