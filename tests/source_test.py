@@ -1,38 +1,37 @@
 import unittest
-from app.models import Source,Articles
+from app.models import Source
+from app.models import Article
 
-# Source = sources.Source
-
-
-class SourcesTest(unittest.TestCase):
+class SourceTest(unittest.TestCase):
     '''
-    Test class to test the behaviour of the source class 
+    Test Class to test the behaviour of the Source class
     '''
 
     def setUp(self):
         '''
-        set up method that will run before every test.
+        Set up method that will run before every Test
         '''
-
-        self.new_source = Source('BBC', 'stanley', 'A great big world',
-                                 'It has always been of difference with everybody estimating the universe size', 'sports', 'https://miano.com')
+        self.new_source = Source('KTN', 'KTN-NEWS', 'Home of News', 'https://ktn.co.ke', 'general', 'ke')
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_source, Source))
-
-    def test_init(self):
         '''
-        test method to check each item is instanciated properly
+        Test to check if new_source instance exists
         '''
+        self.assertTrue(isinstance(self.new_source,Source))
 
-        self.assertEqual(self.new_source.name, 'BBC')
-        self.assertEqual(self.new_source.author, 'stanley')
-        self.assertEqual(self.new_source.title, 'A great big world')
-        self.assertEqual(self.new_source.description,
-                         'It has always been of difference with everybody estimating the universe size')
-        self.assertEqual(self.new_source.category, 'sports')
-        self.assertEqual(self.new_source.urlToImage, 'https://miano.com')
+class ArticleTest(unittest.TestCase):
+    '''
+    Test Class to test the behaviour of the Article class
+    '''
 
+    def setUp(self):
+        '''
+        Set up method that will run before every Test
+        '''
+        self.new_article = Article('Wekesa', 'Kenyan Cars', 'The variety and rich culture that exists in Kenyan motorsport', 'https://ktn.co.ke', 'https://ktn.co.ke/image1', '24/06/2012', 'kenyan motorshow is among the best')
 
-# if __name__ == "__main__":
-#     unittest.main()
+    def test_instance(self):
+        '''
+        Test to check if new_Article instance exists
+        '''
+        self.assertTrue(isinstance(self.new_article,Article))

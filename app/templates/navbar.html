@@ -1,19 +1,31 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+<link
+  href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Kanit|Source+Serif+Pro|Titillium+Web&display=swap"
+  rel="stylesheet">
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="/"> JUICY STORIES</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"> JUICY STORIES</a>
     </div>
-  </nav>
-  
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <form>
+      <input type="text" name="article_query" placeholder="Search  Article" class="form-control">
+      <input type="submit" value="Submit" class="btn btn-default">
+    </form>
+
+  </div>
+  </div>
+  </div>
+</nav>
